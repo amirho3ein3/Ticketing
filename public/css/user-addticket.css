@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Btitr';
+    src: url("../fonts/Btitr.eot")
+ }
+ 
+ @font-face {
+    font-family: 'Btitr';
+    src: url("../fonts/Btitr.ttf")
+ }
+ 
+ @font-face {
+    font-family: 'Btitr';
+    src: url("../fonts/Btitr.woff")
+ }
+ 
+ @font-face {
+    font-family: "Bnazanin";
+    src: url("../fonts/B-NAZANIN.TTF");
+ }
+* {
+    margin: 0 ;
+    padding: 0 ;
+}
+
+.contianer-add-ticket {
+   width: 100vw;
+   /* display: flex; */
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+   margin-top: 3rem;
+}
+.add-ticket {
+   font-family: "Bnazanin";
+    width: 70%;
+    height: 35rem;
+    background-color: #ffffffb0;
+    border-radius: 1.5rem;
+}
+
+.add-ticket form {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   font-size: 1.3rem;
+   padding: 2rem;
+   margin-right:10% ;
+   /* margin-top: 1rem; */
+}
+.btn-back {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: end;
+   align-self: flex-end;
+   font-size: 2.5rem;
+   margin-bottom: .5rem;
+   color: #ffffff;
+   cursor: pointer;
+   text-decoration: none;
+   /* position: relative;
+   top: 3.5rem;
+   left: 1rem; */
+}
+.form-control {
+   width: 80%;
+   height: 2rem;
+   background-color: #ffffff;
+   font-family: Bnazanin;
+   font-size: 1.2rem;
+   border-radius: .5rem;
+   border: 1px solid black;
+   padding-right: 5px;
+}
+.massage-text {
+   width: 80%;
+   height: 8rem;
+   border-radius: .5rem;
+   padding: 3px;
+   font-family: Bnazanin;
+   font-size: 1rem;
+   resize: none;
+}
+
+.file::file-selector-button {
+   border: 1px solid black;
+   padding: .2rem .4rem;
+   border-radius: .2rem;
+   background-color: white;
+   cursor: pointer;
+ }
+form input , select ,.check{
+    margin-bottom: .4rem;
+ }
+
+.check-box {
+    position: relative;
+    top: .25rem;
+ }
+.check label {
+   font-size: 1rem;
+}
+ .btn-send {
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background-color: #94DE1D ;
+    align-self: center;
+    position: relative;
+    left: 10%;
+    font-family: Bnazanin;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ @media screen and (max-width: 768px) {
+   .add-ticket form {
+      width: 90%;
+      padding: 0;
+   }
+   .btn-back {
+      margin-left: 3%;
+      margin-top: 3%;
+   }
+}
+@media screen and (max-width: 554px) {
+   .add-ticket  {
+      width: 90%;
+      padding: 0;
+   }
+   .add-ticket form {
+      width: 95%;
+      padding: 0;
+   }
+   .btn-back {
+      margin-left: 8%;
+      margin-top: 3%;
+   }
+}
+@media screen and (max-width: 328px) {
+   .add-ticket  {
+      width: 100%;
+      padding: 0;
+   }
+   .add-ticket form {
+      width: 100%;
+      padding: 0;
+   }
+   .btn-back {
+      margin-left: 12%;
+      margin-top: 3%;
+   }
+}

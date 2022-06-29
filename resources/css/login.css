@@ -1,0 +1,253 @@
+@charset "utf-8" ;
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Btitr";
+    src: url(../fonts/Btitr.ttf);
+}
+@font-face {
+    font-family: "Bnazanin";
+    src: url(../fonts/BNazanin.ttf);
+}
+
+
+html {
+    font-size: 100% ;
+    font-family: Btitr ,calibri ,Btitr ;
+    font-weight: lighterS;
+    color: #ffffff;
+}
+
+body {
+    background: url(../images/gradient@22x.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.contianer {
+    background:url(../images/paper-airplane\ \(1\)@2x.png) ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 95vw;
+    height: 90vh;
+    border-radius: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 26rem;
+    background-color:rgba(44, 40, 40, 0.705) ;
+    backdrop-filter:blur(4px);   
+    border-radius: 1.5rem;
+    border: 1px solid #707070;
+    padding: 1.5rem;
+    height: 100vh;
+    padding-top: 3rem;
+}
+.para {
+    position: absolute;
+    left: 3%;
+    top: 2rem;
+    width: 18rem;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.btn-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: end;
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+    color: #ffffff;
+    cursor: default;
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+}
+.btn-back i {
+    cursor: pointer;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: .4rem;
+    border-radius: .5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    height: 2rem;
+    width: 19rem;
+    background-color: rgb(255, 254, 254);
+    margin-right: .5rem ;
+    margin-bottom: 1rem;
+    font-family: calibri;
+    font-size: 1.3rem;
+}
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.log{
+    display: flex;
+}
+.i-log {
+    margin-right: .6rem;
+    margin-top: .3rem;
+    color: #94DE1D;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.user {
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.pass {
+    display: flex;
+}
+
+.pass input {
+    margin-right: 1.2rem;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 4.9rem .5rem 0rem;
+}
+.link p,a {
+    text-decoration: none;
+    font-size: .8rem;
+    word-spacing: .1rem;
+    color: #94DE1D;
+    cursor: pointer;
+}
+.link-btn {
+    cursor: default;
+    width: 0;
+}
+.btn-login , .btn-givepass {
+    width: 10rem;
+    height: 2.5rem;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    margin-right: 9rem;
+    padding: 0.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: white;
+    background-color: #94DE1D;
+    border: 1.5px solid rgb(0 0 0 / 52%);
+    cursor: pointer;
+}
+.btn-login:hover ,.btn-givepass:hover {
+    background-color: #3fd48f;
+}
+.btn-givepass {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .para {
+        left: 1rem;
+        font-size: 2rem;
+        top: 3rem;
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .para {
+        display: none;
+    }
+    .contianer {
+        background: none;
+        width: 100vw;
+        height: 100vh;
+    }
+    .form {
+            width: 100vw ;
+            height: 100vh ;
+            margin-top: 5rem;
+            border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 381px) {
+    .user {
+        flex-direction: column;
+    }
+    .pass {
+        flex-direction: column;
+    }
+    .link {
+        margin-right: 1.9rem;
+    }
+    .form-control {
+        margin-right: 1.5rem ;
+    }
+    .pass input {
+        margin-right: 1.5rem;
+    }
+    .form label {
+        margin-right: 2rem ;
+        }
+    .btn-login , .btn-givepass{
+        margin-right: 6rem;
+    }
+}   
+
+@media screen and (max-width: 321px) {
+    .link {
+        margin-right: .9rem;
+    }
+    .form-control {
+        margin-right: .6rem ;
+    }
+    .pass input {
+        margin-right: .6rem;
+    }
+    .form label {
+        margin-right: 1.1rem ;
+        }
+    .user {
+        margin-right: 0rem;
+    }
+    .pass {
+        margin-right: 0rem;
+    }
+    .btn-login , .btn-givepass {
+        margin-right: 6rem;
+    }
+}
+

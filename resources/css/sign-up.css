@@ -1,0 +1,198 @@
+@charset "utf-8" ;
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Btitr";
+    src: url(../fonts/Btitr.ttf);
+}
+@font-face {
+    font-family: "Bnazanin";
+    src: url(../fonts/BNazanin.ttf);
+}
+
+html {
+    font-size: 100% ;
+    font-family: Bnazanin ,Btitr ,calibri ,Btitr ;
+    font-weight: lighterS;
+    color: #ffffff;
+}
+
+body {
+    background: url(../images/gradient@2x.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.contianer {
+    background:url(../images/paper-airplane@2x.png) ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 95vw;
+    border-radius: 1.5rem;
+    /* height: 100vh; */
+}
+.para {
+    position: absolute;
+    left: 3%;
+    top: 0rem;
+    width: 20rem;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    width: 23rem;
+    background-color:rgba(44, 40, 40, 0.705) ;
+    backdrop-filter:blur(4px);  
+    border-radius: 1.5rem;
+    border: 1px solid #707070;
+    padding: 1.5rem;
+    height: 90vh;
+}
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.log{
+    display: flex;
+}
+.i-log {
+    margin-right: .5rem;
+    color: #EF295E;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: end;
+    position: absolute;
+    top: 2.5rem;
+    left: 1rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.form-control {
+    margin-bottom: .4rem;
+    border-radius: .5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    height: 2rem;
+    width: 19rem;
+    background-color: rgb(255, 255, 255);
+    margin-right: 1.5rem ;
+    font-size: 1.5rem;
+    font-family: calibri, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form label {
+    margin-right: 2rem ;
+
+}
+
+.check-txt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.check-box {
+    width: 1rem;
+    margin-left: 4px;
+}
+
+.btn-signup {
+    width: 41%;
+    height: 2.5rem;
+    position: relative;
+    right: 7rem;
+    top: 1rem ;
+    padding: 0.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: white;
+    background-color: #EF295E;
+    border: 1.5px solid rgb(0 0 0 / 52%);
+}
+@media screen and (max-width: 932px) {
+    .para {
+        font-size: 3rem;
+        width: 18rem;
+    }
+}
+@media screen and (max-width: 733px) {
+    .para {
+        transform: rotate(-45deg);
+        left: -3rem;
+        font-size: 3rem;
+        top: 5rem;
+        /* width: 18rem; */
+    }
+}
+@media screen and (max-width: 468px) {
+    .para{
+        display: none;
+    }
+    .contianer {
+        background:none ;
+        width: 100vw ;
+        height: 100vh ;
+    }
+    .form {
+            width: 100vw ;
+            height: 100vh ;
+            margin-top: 5rem;
+            border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .form-control {
+            margin-right: 1.5rem ;
+    }
+    .form label {
+        margin-right: 2rem ;
+        }
+    .check-txt {
+            font-size: .8rem ;
+            }
+}   
+
+@media screen and (max-width: 340px) {
+    .form-control {
+            width: 17rem ;
+    }
+    .check-txt {
+        font-size: .7rem ;
+        }
+}
